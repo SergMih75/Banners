@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
+
+.banners-header {
+    width: 1200px;
+    height: 250px;
+    padding-top: 54px;
+    padding-left: 208px;
+
+    position: relative;
+}
+
+.banners-header__title {
+    color: #FFF;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banners-header__text {
+    color: #FFF;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banners-header__btn {
+    width: 158px;
+    height: 37.24px;
+
+    position: relative;
+    z-index: 1;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #076D11;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+
+    background-color: #ffffff;
+    border-radius: 7.23px;
+    -webkit-border-radius: 7.23px;
+    -moz-border-radius: 7.23px;
+    -ms-border-radius: 7.23px;
+    -o-border-radius: 7.23px;
+}
+
+.banners__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0,0,0,0);
+
+    overflow-y: auto;
+    overflow-x: auto;
+
+    user-select: none;
+}
+
+/* Скролл */
+
+.banners__bg::-webkit-scrollbar  {
+    display: none;
+}
+
+.banners__bg {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+.banners-header__bg {
+    width: 1200px;
+    height: 250px;
+}
+
+.banners__bg-fild {
+    position: absolute;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.banners-header__bg-fild {
+    width: 1660px;
+    height: 350px;
+
+    top: 0;
+    left: -164px;
+
+    background-image: url(../img/bg/header_banner_bg_desc.jpg);
+    background-position: 164px 0;
+}
+
+@media (max-width: 392px) {
+    .wrapper {
+        width: 390px;
+    }
+
+    .banners-header {
+        width: 390px;
+        height: 150px;
+        padding-top: 32px;
+        padding-left: 71px;
+    }
+
+    .banners-header__title {
+        font-size: 21.058px;
+    }
+
+    .banners-header__text {
+        font-size: 21.058px;
+    }
+    
+    .banners-header__btn {
+        width: 95.16px;
+        height: 21.96px;
+
+        font-size: 12.033px;
+
+        border-radius: 4.65px;
+        -webkit-border-radius: 4.65px;
+        -moz-border-radius: 4.65px;
+        -ms-border-radius: 4.65px;
+        -o-border-radius: 4.65px;
+    }
+
+    .banners-header__bg {
+        width: 390px;
+        height: 100%;
+    }
+
+    .banners-header__bg-fild {
+        width: 390px;
+        height: 150px;
+    
+        left: 0;
+    
+        background-image: url(../img/bg/header_banner_bg_mobail.png);
+        background-position: 0 0;
+        background-size: contain;
+    }
+}
