@@ -47,6 +47,13 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
 /* Общие для всех баннеров стили. Конец */
 
 
@@ -115,7 +122,7 @@
     top: 0;
     left: -164px;
 
-    /* background-image: url(../img/bg/header_banner_bg_desc.png); */
+    background-image: url(../img/bg/header_banner_bg_desc.png);
     background-position: 164px 0;
 }
 
@@ -268,7 +275,7 @@
     top: -30px;
     left: -26px;
 
-    /* background-image: url(../img/bg/side_banner.png); */
+    background-image: url(../img/bg/side_banner.png);
     background-position: 26px 30px;
 }
 /* Правила для бокового баннера. Конец */
@@ -364,9 +371,9 @@
     background-position: 0 0;
 }
 
-/* .banner-item__bg-one {background-image: url(../img/bg/banner_1_desc.png);}
+.banner-item__bg-one {background-image: url(../img/bg/banner_1_desc.png);}
 
-.banner-item__bg-two {background-image: url(../img/bg/banner_2_desc.png);} */
+.banner-item__bg-two {background-image: url(../img/bg/banner_2_desc.png);}
 
 @media (max-width: 392px) {
     .banners-block {
@@ -505,7 +512,7 @@
     top: -27px;
     left: -207px;
 
-    /* background-image: url(../img/bg/banner_map_desc.png); */
+    background-image: url(../img/bg/banner_map_desc.png);
     background-position: 207px 27px;
 }
 
