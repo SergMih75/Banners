@@ -48,12 +48,12 @@
     background-attachment: scroll;
 }
 
-.bg {
+/* .bg {
     position: absolute;
     z-index: -1;
     background-repeat: no-repeat;
     background-attachment: scroll;
-}
+} */
 /* Общие для всех баннеров стили. Конец */
 
 
@@ -65,6 +65,8 @@
     padding-left: 208px;
 
     position: relative;
+
+    margin: 0 auto;
 }
 
 .banner-header__title {
@@ -73,6 +75,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    position: relative;
+    z-index: 3;
 }
 
 .banner-header__text {
@@ -81,6 +86,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    position: relative;
+    z-index: 3;
 }
 
 .banner-header__btn {
@@ -510,7 +518,7 @@
     height: 281px;
 
     top: -27px;
-    left: -207px;
+    left: -206.7px;
 
     background-image: url(../img/bg/banner_map_desc.png);
     background-position: 207px 27px;
