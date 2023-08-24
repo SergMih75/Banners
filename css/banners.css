@@ -5,12 +5,52 @@
     font-family: 'Jost', sans-serif;
 }
 
+/* !Отладочный блок */
 .wrapper {
     width: 100%;
     height: 100px;
+    
     background-color: aqua;
 }
+/* !Отладочный блок.Конец */
 
+/* Общие для всех баннеров стили */
+.banners__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0,0,0,0);
+
+    overflow-y: auto;
+    overflow-x: auto;
+
+    user-select: none;
+}
+
+/* Скролл по кнопкам вправо,влево*/
+
+.banners__bg::-webkit-scrollbar  {
+    display: none;
+}
+
+.banners__bg {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+/* Скролл по кнопкам вправо,влево. Конец*/
+
+.banners__bg-fild {
+    position: absolute;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+/* Общие для всех баннеров стили. Конец */
+
+
+/* Правила для баннера в хэдере */
 .banners-header {
     width: 1200px;
     height: 250px;
@@ -20,7 +60,7 @@
     position: relative;
 }
 
-.banners-header__title {
+.banner-header__title {
     color: #FFF;
     font-size: 35px;
     font-style: normal;
@@ -28,7 +68,7 @@
     line-height: normal;
 }
 
-.banners-header__text {
+.banner-header__text {
     color: #FFF;
     font-size: 35px;
     font-style: normal;
@@ -36,7 +76,7 @@
     line-height: normal;
 }
 
-.banners-header__btn {
+.banner-header__btn {
     width: 158px;
     height: 37.24px;
 
@@ -62,51 +102,20 @@
     -o-border-radius: 7.23px;
 }
 
-.banners__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
 
-    background-color: rgba(0,0,0,0);
-
-    overflow-y: auto;
-    overflow-x: auto;
-
-    user-select: none;
-}
-
-/* Скролл */
-
-.banners__bg::-webkit-scrollbar  {
-    display: none;
-}
-
-.banners__bg {
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
-}
-
-.banners-header__bg {
+.banner-header__bg {
     width: 1200px;
     height: 250px;
 }
 
-.banners__bg-fild {
-    position: absolute;
-    z-index: -1;
-
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-.banners-header__bg-fild {
+.banner-header__bg-fild {
     width: 1660px;
-    height: 350px;
+    height: 250px;
 
     top: 0;
     left: -164px;
 
-    background-image: url(../img/bg/header_banner_bg_desc.jpg);
+    background-image: url(../img/bg/header_banner_bg_desc.png);
     background-position: 164px 0;
 }
 
@@ -120,17 +129,19 @@
         height: 150px;
         padding-top: 32px;
         padding-left: 71px;
+
+        position: relative;
     }
 
-    .banners-header__title {
+    .banner-header__title {
         font-size: 21.058px;
     }
 
-    .banners-header__text {
+    .banner-header__text {
         font-size: 21.058px;
     }
     
-    .banners-header__btn {
+    .banner-header__btn {
         width: 95.16px;
         height: 21.96px;
 
@@ -143,12 +154,12 @@
         -o-border-radius: 4.65px;
     }
 
-    .banners-header__bg {
+    .banner-header__bg {
         width: 390px;
         height: 100%;
     }
 
-    .banners-header__bg-fild {
+    .banner-header__bg-fild {
         width: 390px;
         height: 150px;
     
@@ -157,5 +168,389 @@
         background-image: url(../img/bg/header_banner_bg_mobail.png);
         background-position: 0 0;
         background-size: contain;
+    }
+}
+/* Правила для баннера в хэдере. Конец */
+
+/* Правила для бокового баннера */
+.banner-side {
+    width: 300px;
+    height: 370px;
+    padding-top: 14px;
+    padding-left: 22px;
+
+    position: relative;
+}
+
+.banner-side__title {
+    width: 198px;
+    margin-bottom: 21.85px;
+
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.banner-side__text {
+    width: 91px;
+    height: 54px;
+
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner-side__btn {
+    width: 258px;
+    height: 50.408px;
+    margin-top: 16px;
+
+    position: relative;
+    z-index: 3;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #aefbb6;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px -5px 60px 0px rgba(0, 0, 0, 0.15);
+
+    color: #076D11;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.banner-side__text-two,
+.banner-side__link {
+    width: 254px;
+    margin-top: 22.22px;
+
+    color: #FFF;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner-side__link {
+    cursor: pointer;
+    text-decoration-line: underline;
+
+    position: relative;
+    z-index: 3;
+}
+
+.banner-side__bg {
+    width: 300px;
+    height: 370px;
+}
+
+.banner-side__bg-fild {
+    width: 366px;
+    height: 435px;
+
+    top: -30px;
+    left: -26px;
+
+    background-image: url(../img/bg/side_banner.png);
+    background-position: 26px 30px;
+}
+/* Правила для бокового баннера. Конец */
+
+/* Правила для блока баннеров */
+
+.banners-block {
+    width: 1440px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-item {
+    width: 619px;
+    height: 273px;
+    padding-top: 52px;
+    padding-left: 34px;
+
+    position: relative;
+}
+
+.banner-item__title {
+    width: 396px;
+
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.banner-item__text {
+    width: 312px;
+    margin-top: 19px;
+
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.4px;
+}
+
+.banner-item__btn {
+    width: 236.33px;
+    height: 41.59px;
+    margin-top: 31.63px;
+    position: relative;
+    z-index: 3;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 3.15px;
+    -webkit-border-radius: 3.15px;
+    -moz-border-radius: 3.15px;
+    -ms-border-radius: 3.15px;
+    -o-border-radius: 3.15px;
+    border: 0.63px solid rgba(228, 35, 70, 0.00);
+    background-color: #ffffff;
+    box-shadow: 0px -3.151125431060791px 37.81350326538086px 0px rgba(0, 0, 0, 0.15);
+
+    color: #076D11;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.banner-item__btn_19mt {
+    margin-top: 19.36px;
+}
+
+.banner-item__bg {
+    width: 619px;
+    height: 273px;
+}
+
+.banner-item__bg-one,
+.banner-item__bg-two {
+    width: 620px;
+    height: 276px;
+
+    top: 0;
+    left: 0;
+
+    background-position: 0 0;
+}
+
+.banner-item__bg-one {background-image: url(../img/bg/banner_1_desc.png);}
+
+.banner-item__bg-two {background-image: url(../img/bg/banner_2_desc.png);}
+
+@media (max-width: 392px) {
+    .banners-block {
+        width: 390px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .banner-item {
+        width: 390px;
+        height: 150px;
+        padding-top: 19px;
+        padding-left: 19px;
+    }
+    
+    .banner-item__title {
+        width: 239px;
+    
+        font-size: 14px;
+        letter-spacing: 0.28px;
+    }
+    
+    .banner-item__text {
+        width: 172px;
+        margin-top: 5px;
+    
+        font-size: 11px;
+        letter-spacing: 0.22px;
+    }
+    
+    .banner-item__btn {
+        width: 150.57px;
+        height: 26.5px;
+        margin-top: 15.12px;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border: 0.408px solid rgba(228, 35, 70, 0.00);
+        background-color: #ffffff;
+        box-shadow: 0px -2.007px 24.09px 0px rgba(0, 0, 0, 0.15);
+
+        font-size: 12px;
+        letter-spacing: 0.24px;
+    }
+    .banner-item__btn_19mt {
+        margin-top: 7.8px;
+    }
+    
+    .banner-item__bg {
+        width: 390px;
+        height: 150px;
+    }
+    
+    .banner-item__bg-one,
+    .banner-item__bg-two {
+        width: 390px;
+        height: 150px;
+    
+        top: 0;
+        left: 0;
+    }
+    
+    .banner-item__bg-one {background-image: url(../img/bg/banner_1_mobail.png);}
+    
+    .banner-item__bg-two {background-image: url(../img/bg/banner_2_mobail.png);}
+}
+/* Правила для блока баннеров. Конец */
+
+/* Правила для баннера с картой */
+.banner-map {
+    width: 310.4px;
+    height: 199px;
+    padding-top: 47px;
+    padding-left: 18.7px;
+
+    position: relative;
+}
+
+.banner-map__title {
+    width: 202.46px;
+    height: 73px;
+
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+}
+
+.banner-map__btn {
+    width: 102.79px;
+    height: 36px;
+
+    position: relative;
+    z-index: 3;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #1a7823;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid rgba(228, 35, 70, 0.00);
+    box-shadow: 0px -5px 60px 0px rgba(0, 0, 0, 0.15);
+
+    color: #fefefe;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.banner-map__bg {
+    width: 310.4px;
+    height: 199px;
+}
+
+.banner-map__bg-fild {
+    width: 675.404px;
+    height: 281px;
+
+    top: -27px;
+    left: -207px;
+
+    background-image: url(../img/bg/banner_map_desc.png);
+    background-position: 207px 27px;
+}
+
+@media (max-width: 392px) {
+    .banner-map {
+        width: 311px;
+        height: 119.5px;
+        padding-top: 14.11px;
+        padding-left: 11.72px;
+    }
+    
+    .banner-map__title {
+        font-size: 11.64px;
+        letter-spacing: 0.223px;
+    }
+    
+    .banner-map__btn {
+        width: 102.79px;
+        height: 21.53px;
+        border-radius: 3.987px;
+        -webkit-border-radius: 3.987px;
+        -moz-border-radius: 3.987px;
+        -ms-border-radius: 3.987px;
+        -o-border-radius: 3.987px;
+        border: 0.797px solid rgba(228, 35, 70, 0.00);
+        border-radius: 3.987px;
+        box-shadow: 0px -3.9871792793273926px 47.846153259277344px 0px rgba(0, 0, 0, 0.15);
+
+        font-size: 8.772px;
+        letter-spacing: 0.175px;
+}
+    
+    .banner-map__bg {
+        width: 311px;
+        height: 119.5px;
+    }
+    
+    .banner-map__bg-fild {
+        width: 417.06px;
+        height: 173.52px;
+    
+        top: -14px;
+        left: -45px;
+    
+        background-image: url(../img/bg/banner_map_mobail.png);
+        background-position: 45px 14px;
     }
 }
