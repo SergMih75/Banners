@@ -103,3 +103,32 @@ function cursorOver() {
 if (window.screen.width > 392) {
     cursorOver();
 }
+
+
+
+let option = {threshold: 0.5}
+
+const arr = document.querySelectorAll('banners__bg')
+    arr.forEach(i => {
+        observer.observe(i)
+    })
+
+        function onEntry(entry) {
+            entry.forEach(change => {
+            if (change.isIntersecting) {
+                console.log(change.target);
+                return change.target
+                
+
+            }
+            });
+        }
+
+        let options = {
+            threshold: [0.5] };
+        let observer = new IntersectionObserver(onEntry, options);
+        let elements = document.querySelectorAll('.banners__bg');
+
+        for (let elm of elements) {
+            observer.observe(elm);
+        }
