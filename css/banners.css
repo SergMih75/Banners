@@ -48,12 +48,6 @@
     background-attachment: scroll;
 }
 
-/* .bg {
-    position: absolute;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-} */
 /* Общие для всех баннеров стили. Конец */
 
 
@@ -66,7 +60,9 @@
 
     position: relative;
 
+    /* ! Отладочное правило. При "посадке" - удалить */
     margin: 0 auto;
+    /* !Конц */
 }
 
 .banner-header__title {
@@ -132,6 +128,7 @@
 
     background-image: url(../img/bg/header_banner_bg_desc.png);
     background-position: 164px 0;
+    background-color: #3c9645;
 }
 
 @media (max-width: 392px) {
@@ -195,6 +192,10 @@
     padding-left: 22px;
 
     position: relative;
+
+        /* ! Отладочное правило. При "посадке" - удалить */
+        margin: 0 auto;
+        /* !Конц */
 }
 
 .banner-side__title {
@@ -285,6 +286,7 @@
 
     background-image: url(../img/bg/side_banner.png);
     background-position: 26px 30px;
+    background-color: #086d10;
 }
 /* Правила для бокового баннера. Конец */
 
@@ -295,6 +297,10 @@
     
     display: flex;
     justify-content: space-between;
+
+        /* ! Отладочное правило. При "посадке" - удалить */
+        margin: 0 auto;
+        /* !Конц */
 }
 
 .banner-item {
@@ -463,6 +469,10 @@
     padding-left: 18.7px;
 
     position: relative;
+
+        /* ! Отладочное правило. При "посадке" - удалить */
+        margin: 0 auto;
+        /* !Конц */
 }
 
 .banner-map__title {
@@ -522,6 +532,7 @@
 
     background-image: url(../img/bg/banner_map_desc.png);
     background-position: 207px 27px;
+    background-color: #91cb99;
 }
 
 @media (max-width: 392px) {

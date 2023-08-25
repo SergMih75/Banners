@@ -5,11 +5,16 @@ function paralaxHeader(elem) {
 
     let rect = elem.getBoundingClientRect();
 
-    console.log(event.clientX - rect.left);
+    // console.log(event.clientX - rect.left);
+    // console.log(event.clientX -((rect.left + rect.width)/2));
+
+    // if ((event.clientX - rect.left -164)<0) {
+    // elem.children[0].style.left = (event.clientX -((rect.left + rect.width)/2)) + "px";
+    // }
 
     if ((event.clientX - rect.left -164)<0) {
-    elem.children[0].style.left = event.clientX - rect.left -164 + "px";
-    }
+        elem.children[0].style.left = event.clientX - rect.left -164 + "px";
+        }
     });
 
     elem.addEventListener('mouseleave', () => {
@@ -48,8 +53,8 @@ function paralaxMap(elem) {
 
     
     if (window.screen.width > 392) {
-        if ((event.clientX - rect.left -206.7)<-199.7) {
-    elem.children[0].style.left = event.clientX - rect.left -100.7 + "px";
+        if ((event.clientX - rect.left -206.7)<-180.7) {
+    elem.children[0].style.left = event.clientX - rect.left -200.7 + "px";
         }
         if ((event.clientY - rect.top -27)<1) {
     elem.children[0].style.top = event.clientY - rect.top -27 + "px";
