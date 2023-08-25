@@ -531,14 +531,14 @@
 }
 
 .banner-map__bg-fild {
-    width: 675.404px;
-    height: 281px;
+    width: 310.4px;
+    height: 240px;
 
     top: -27px;
-    left: -206.7px;
+    /* left: -206.7px; */
 
     background-image: url(../img/bg/banner_map_desc.png);
-    background-position: 207px 27px;
+    background-position: 0px 27px;
     background-color: #91cb99;
 }
 
@@ -577,14 +577,14 @@
     }
     
     .banner-map__bg-fild {
-        width: 417.06px;
-        height: 173.52px;
+        width: 311px;
+        height: 147.52px;
     
         top: -14px;
-        left: -45px;
+        /* left: -45px; */
     
         background-image: url(../img/bg/banner_map_mobail.png);
-        background-position: 45px 14px;
+        background-position: 0px 14px;
     }
 }
 
