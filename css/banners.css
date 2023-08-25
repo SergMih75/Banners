@@ -129,6 +129,11 @@
     background-image: url(../img/bg/header_banner_bg_desc.png);
     background-position: 164px 0;
     background-color: #3c9645;
+
+    
+    animation-name: mooveX;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
 }
 
 @media (max-width: 392px) {
@@ -180,6 +185,10 @@
         background-image: url(../img/bg/header_banner_bg_mobail.png);
         background-position: 0 0;
         background-size: contain;
+
+        animation-name: mooveSmallX;
+        animation-duration: 1500ms;
+        animation-iteration-count: infinite
     }
 }
 /* Правила для баннера в хэдере. Конец */
@@ -579,4 +588,19 @@
         background-image: url(../img/bg/banner_map_mobail.png);
         background-position: 45px 14px;
     }
+}
+
+
+/* Анимация */
+
+@keyframes mooveX {
+    0% {left: -164px;}
+    50% {left: -162px;}
+    100% {left: -164px;}
+}
+
+@keyframes mooveSmallX {
+    0% {left: 0;}
+    50% {left: 2px;}
+    100% {left: 0;}
 }
