@@ -122,18 +122,16 @@
 .banner-header__bg-fild {
     width: 1660px;
     height: 250px;
-
     top: 0;
     left: -164px;
-
     background-image: url(../img/bg/header_banner_bg_desc.png);
     background-position: 164px 0;
     background-color: #3c9645;
 
-    
-    animation-name: mooveX;
-    animation-duration: 1500ms;
-    animation-iteration-count: infinite;
+    /* animation-name: mooveX; */
+    animation-name: scale;
+    animation-duration: 5000ms;
+    animation-iteration-count: 1;
 }
 
 @media (max-width: 392px) {
@@ -593,7 +591,7 @@
 
 /* Анимация */
 
-@keyframes mooveX {
+/* @keyframes mooveX {
     0% {left: -164px;}
     50% {left: -162px;}
     100% {left: -164px;}
@@ -603,4 +601,21 @@
     0% {left: 0;}
     50% {left: 2px;}
     100% {left: 0;}
+} */
+
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+}
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
 }
