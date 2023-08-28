@@ -184,9 +184,12 @@
         background-position: 0 0;
         background-size: contain;
 
-        animation-name: mooveSmallX;
-        animation-duration: 1500ms;
-        animation-iteration-count: infinite
+
+            /*! Корректировка от 28.08.23  */
+        animation-name: scale;
+        animation-duration: 5000ms;
+        animation-iteration-count: 1;
+            /*! Корректировка от 28.08.23 Конец */
     }
 }
 /* Правила для баннера в хэдере. Конец */
@@ -280,19 +283,25 @@
 }
 
 .banner-side__bg {
+      /*! Корректировка от 28.08.23  */
     width: 300px;
+      /*! Корректировка от 28.08.23 Конец */
     height: 370px;
 }
 
 .banner-side__bg-fild {
-    width: 366px;
+    width: 300px;
     height: 435px;
 
     top: -30px;
-    left: -26px;
+      /*! Корректировка от 28.08.23  */
+    /* left: -26px; */
+      /*! Корректировка от 28.08.23 Конец */
 
     background-image: url(../img/bg/side_banner.png);
-    background-position: 26px 30px;
+      /*! Корректировка от 28.08.23  */
+    background-position: 0px 30px;
+      /*! Корректировка от 28.08.23 Конец */
     background-color: #086d10;
 }
 /* Правила для бокового баннера. Конец */
