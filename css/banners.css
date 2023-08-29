@@ -274,14 +274,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    position: relative;
+    z-index: 3;
 }
 
 .banner-side__link {
     cursor: pointer;
     text-decoration-line: underline;
-
-    position: relative;
-    z-index: 3;
 }
 
 /*! Корректировка от 28.08.23 Добавлены классы стилей */
