@@ -264,8 +264,10 @@
 
 .banner-side__text-two,
 .banner-side__link {
-    width: 254px;
-    margin-top: 22.22px;
+    /*! Корректировка от 28.08.23  */
+    /* width: 254px; */
+    /*! Корректировка от 28.08.23 Конец */
+    margin-top: 6.22px;
 
     color: #FFF;
     font-size: 10px;
@@ -281,6 +283,23 @@
     position: relative;
     z-index: 3;
 }
+
+/*! Корректировка от 28.08.23 Добавлены классы стилей */
+.banner-side-text-link {
+    width: 260px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-side-text-link span {
+    width: 3px;
+}
+
+.banner-side__link:hover {
+    color: #FFF;
+}
+/*! Корректировка от 28.08.23 Конец */
 
 .banner-side__bg {
       /*! Корректировка от 28.08.23  */
