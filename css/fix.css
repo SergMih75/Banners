@@ -53,10 +53,10 @@
 
 /* Правила для баннера в хэдере */
 .banners-header {
-    width: 1600px;
+    width: 1200px;
     height: 250px;
     padding-top: 54px;
-    padding-left: 306px;
+    padding-left: 208px;
 
     position: relative;
 
@@ -115,17 +115,17 @@
 
 
 .banner-header__bg {
-    width: 1600px;
+    width: 1200px;
     height: 250px;
 }
 
 .banner-header__bg-fild {
-    width: 1600px;
+    width: 1660px;
     height: 250px;
     top: 0;
-    left: -px;
+    left: -164px;
     background-image: url(../img/bg/header_banner_bg_desc.png);
-    /* background-position: 164px 0; */
+    background-position: 164px 0;
     background-color: #3c9645;
 
     /* animation-name: mooveX; */
@@ -264,9 +264,9 @@
 
 .banner-side__text-two,
 .banner-side__link {
-    /*! Корректировка от 28.08.23  */
+    /*! Корректировка от 29.08.23  */
     /* width: 254px; */
-    /*! Корректировка от 28.08.23 Конец */
+    /*! Корректировка от 29.08.23 Конец */
     margin-top: 6.22px;
 
     color: #FFF;
@@ -284,7 +284,7 @@
     text-decoration-line: underline;
 }
 
-/*! Корректировка от 28.08.23 Добавлены классы стилей */
+/*! Корректировка от 29.08.23 Добавлены классы стилей */
 .banner-side-text-link {
     width: 260px;
     margin-top: 16px;
@@ -300,7 +300,7 @@
 .banner-side__link:hover {
     color: #FFF;
 }
-/*! Корректировка от 28.08.23 Конец */
+/*! Корректировка от 29.08.23 Конец */
 
 .banner-side__bg {
       /*! Корректировка от 28.08.23  */
@@ -330,11 +330,9 @@
 
 .banners-block {
     width: 1440px;
-    padding: 10px;
-    padding: 10px;
     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
         /* ! Отладочное правило. При "посадке" - удалить */
         margin: 0 auto;
